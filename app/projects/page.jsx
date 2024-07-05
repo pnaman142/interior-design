@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     name: "Kitchen look modern and clean",
     description:
-      "kitchen look modern and clean. charming white a modern design. ",
+      "kitchen look modern, clean and comfortable design for your family. charming white a modern design. ",
     image: "/image/project2.jpg",
     link: "",
   },
@@ -51,9 +51,11 @@ const page = () => {
                 className="w-full"
               />
             </div>
-            <div className="absolute bottom-0 right-0 bg-white/90 dark:bg-black/40 flex-col items-center justify-end w-96 gap-32 p-12 text-xl transition duration-300 ease-in-out translate-y-full from-transparent to-black group-hover:translate-y-0">
-              <h1 className="text-2xl font-semibold">{project.name}</h1>
-              <p className="py-4">{project.description}</p>
+            <div className="absolute bottom-0 right-0 bg-white/90 dark:bg-black/40 flex flex-col items-center justify-end w-60 lg:w-96 gap-2 p-2 lg:p-12 text-sm lg:text-xl transition duration-300 ease-in-out transform translate-y-full group-hover:translate-y-0">
+              <h1 className="text-sm lg:text-2xl font-semibold">
+                {project.name}
+              </h1>
+              <p className="py-1 lg:py-4">{project.description}</p>
             </div>
           </div>
         ))}

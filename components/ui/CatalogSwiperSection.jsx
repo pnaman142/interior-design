@@ -80,7 +80,7 @@ export default function CatalogSwiperSection() {
           },
         }}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
-        modules={{ Autoplay }}
+        modules={[Autoplay]}
       >
         <SwiperSlide>
           <Image
